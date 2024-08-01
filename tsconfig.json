@@ -1,15 +1,12 @@
 {
-  "$schema": "https://json.schemastore.org/tsconfig",
-  "_version": "22.0.0",
-
   "compilerOptions": {
-    "lib": ["dom", "es6"],
-    "module": "node16",
-    "target": "es2022",
-
+    "target": "es6",
+    "module": "commonjs",
+    "lib": ["es6"],
     "strict": true,
     "esModuleInterop": true,
-    "skipLibCheck": true,
-    "moduleResolution": "node16"
-  }
+    "types": ["node", "fastify", "fastify-cookie"]
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
 }
