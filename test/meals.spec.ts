@@ -20,7 +20,7 @@ describe('Meals routes', () => {
   it('should be able to create a new meal', async () => {
     const userResponse = await request(app.server)
       .post('/users')
-      .send({ name: 'John Doe', email: 'johndoe@gmail.com' })
+      .send({ name: 'Matheus G', email: 'matheusg@email.com' })
       .expect(201)
 
     await request(app.server)
@@ -38,7 +38,7 @@ describe('Meals routes', () => {
   it('should be able to list all meals from a user', async () => {
     const userResponse = await request(app.server)
       .post('/users')
-      .send({ name: 'John Doe', email: 'johndoe@gmail.com' })
+      .send({ name: 'Matheus G', email: 'matheusg@email.com' })
       .expect(201)
 
     await request(app.server)
@@ -117,7 +117,7 @@ describe('Meals routes', () => {
   it('should be able to update a meal from a user', async () => {
     const userResponse = await request(app.server)
       .post('/users')
-      .send({ name: 'John Doe', email: 'johndoe@gmail.com' })
+      .send({ name: 'Matheus G', email: 'matheusg@email.com' })
       .expect(201)
 
     await request(app.server)
@@ -153,7 +153,7 @@ describe('Meals routes', () => {
   it('should be able to delete a meal from a user', async () => {
     const userResponse = await request(app.server)
       .post('/users')
-      .send({ name: 'John Doe', email: 'johndoe@gmail.com' })
+      .send({ name: 'Matheus G', email: 'matheusg@email.com' })
       .expect(201)
 
     await request(app.server)
@@ -183,7 +183,7 @@ describe('Meals routes', () => {
   it('should be able to get metrics from a user', async () => {
     const userResponse = await request(app.server)
       .post('/users')
-      .send({ name: 'John Doe', email: 'johndoe@gmail.com' })
+      .send({ name: 'Matheus G', email: 'matheusg@email.com' })
       .expect(201)
 
     await request(app.server)
